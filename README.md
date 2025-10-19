@@ -5,7 +5,7 @@
 
 **results**: 各模型跑出的预测数据
 
-**JupyterNotebook**: kaggle教程notebook
+**JupyterNotebook**: 学习过程notebook
 
 **imdb_sentiment_analysis_torch**:各模型运行代码
 
