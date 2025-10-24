@@ -38,3 +38,29 @@
 | BOW | / | 84% | 42秒 | 速度较快,准确率还行                         |
 | Word2Vec+AverageVectors | / | 83% | 282秒 | 速度较快,准确率还行                         |
 | Word2Vec+Kmeans | / | 85% | | 速度一般,准确率还行                         |
+
+## Kaggle提交结果
+
+| 模型 | Private Score | Public Score | 备注           |
+|------|--------------|--------------|--------------|
+| BagOfCentroids | 0.84696 | 0.84696 | -            |
+| Bag_of_Words_model | 0.84404 | 0.84404 | -            |
+| Attention_LSTM | 0.83892 | 0.83892 | -            |
+| Deberta_ptuning | 0.58144 | 0.58144 | 效果较差         |
+| Deberta_prompt | 0.70604 | 0.70604 | -            |
+| Deberta_LoRA | 0.96768 | 0.96768 | **最高分**      |
+| Word2Vec_AverageVectors | 0.82864 | 0.82864 | -            |
+| Transformer_GloVe | 0.86288 | 0.86288 | -            |
+| Transformer | 0.57952 | 0.57952 | 未使用GloVe，效果差 |
+| RoBERTa_Trainer | 0.95264 | 0.95264 | -            |
+| LSTM | 0.78880 | 0.78880 | -            |
+| GRU | 0.81976 | 0.81976 | -            |
+| DistilBERT_Trainer | 0.92984 | 0.92984 | -            |
+| DistilBERT_Native | 0.91340 | 0.91340 | -            |
+| CNN_LSTM | 0.84332 | 0.84332 | -            |
+| CNN | 0.69860 | 0.69860 | -            |
+| Capsule_LSTM | 0.88368 | 0.88368 | -            |
+| BERT_Trainer | 0.93900 | 0.93900 | -            |
+| BERT_Scratch | 0.93452 | 0.93452 | -            |
+| BERT_Native | 0.91116 | 0.91116 | -            |
+
