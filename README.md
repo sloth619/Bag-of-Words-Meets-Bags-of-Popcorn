@@ -31,6 +31,7 @@
 | Deberta_prompt | 71.42% | 71.28% | 2小时18分 | kaggle运行，速度慢，效果一般，训练参数是原模型的0.0024% |
 | Deberta_LoRA | 96.02% | 96.88% | 2小时20分 | kaggle运行，速度慢，效果全场最佳，训练参数是原模型的0.1809% |
 | Deberta_ptuning | 58.22% | 57.96% | 2小时10分 | kaggle运行，速度慢，效果差，训练参数是原模型的0.0694% |
+| Deberta_prefix | / | / | /| 模型不支持 Prefix Tuning |
 | **tutorial models** |
 | BOW | / | 84% | 42秒 | 速度较快,准确率还行                         |
 | Word2Vec+AverageVectors | / | 83% | 282秒 | 速度较快,准确率还行                         |
