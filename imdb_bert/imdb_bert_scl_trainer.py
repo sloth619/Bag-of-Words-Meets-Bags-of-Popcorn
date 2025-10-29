@@ -2,7 +2,7 @@ import os
 import sys
 import logging
 import datasets
-import evaluate  # 修改1: 改用 evaluate 库
+import evaluate
 import losses
 
 import torch.nn as nn
@@ -81,7 +81,6 @@ if __name__ == '__main__':
     val_dataset = datasets.Dataset.from_dict(val_dict)
     test_dataset = datasets.Dataset.from_dict(test_dict)
 
-    # 修改2: 使用原始字符串或正斜杠
     tokenizer = BertTokenizerFast.from_pretrained(r'E:\model\bert-base-uncased')
 
 
@@ -95,10 +94,8 @@ if __name__ == '__main__':
 
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
-    # 修改3: 使用原始字符串或正斜杠
     model = BertScratch.from_pretrained(r'E:\model\bert-base-uncased')
 
-    # 修改4: 改用 evaluate.load
     metric = evaluate.load("accuracy")
 
 
@@ -138,6 +135,5 @@ if __name__ == '__main__':
     print(test_pred)
 
     result_output = pd.DataFrame(data={"id": test["id"], "sentiment": test_pred})
-    # 修改6: 修复路径中的错误字符
     result_output.to_csv("../results/bert_scl_trainer.csv", index=False, quoting=3)
     logging.info('result saved!')

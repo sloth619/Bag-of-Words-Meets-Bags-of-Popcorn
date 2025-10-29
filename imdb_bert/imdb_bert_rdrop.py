@@ -107,7 +107,6 @@ if __name__ == '__main__':
 
     model = BertScratch.from_pretrained(r'E:\model\bert-base-uncased')
 
-    # Changed from datasets.load_metric to evaluate.load
     metric = evaluate.load("accuracy")
 
 
